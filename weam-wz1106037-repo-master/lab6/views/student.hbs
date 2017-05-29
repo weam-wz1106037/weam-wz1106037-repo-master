@@ -1,0 +1,35 @@
+<h1>Student List:</h1>
+<br>
+
+<div id="students-list">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td>studentID</td>
+            <td>Name</td>
+            <td>Program</td>
+            <td></td>
+        </tr>
+        </thead>
+        <tbody>
+        {{#students}}
+            <tr>
+                <td>{{ studentId }}</td>
+                <td>{{ firstname }} {{lastname}}</td>
+                <td>{{ program }}</td>
+                <td>  <a href="javascript:void(0);" onclick="updateStudent({{studentId}});"
+                         data-student-id="{{studentId}}" class="editButton btn btn-info">edit
+                </a>
+                    <a href="" data-student-id="{{studentId}}" class="deleteButton btn btn-info">del</a>
+                </td>
+
+            </tr>
+        {{/students}}
+        </tbody>
+    </table>
+</div>
+
+
+<div id="student-form" style="display:none;"></div>
+
+<script src="/views/js/student.js"></script>

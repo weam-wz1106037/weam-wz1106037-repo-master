@@ -1,0 +1,35 @@
+<h3>
+  Hifz List
+</h3>
+<hr>
+
+
+<table *ngIf="hifz" id="tasksTable" class="table table-striped table-bordered dataTable" name="tasks">
+  <thead>
+  <tr>
+    <th>Surah Name</th>
+    <th>From Aya</th>
+    <th>To Aya</th>
+    <th>Task Type</th>
+    <th>Completed Date</th>
+    <th>Mastery Level</th>
+    <th> </th>
+
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr *ngFor="let h of hifz">
+    <td  class="courseName">{{h.suraName}}</td>
+    <td class="taskType">{{h.fromAya}}</td>
+    <td class="title">{{h.toAya}}</td>
+    <td class="dueDate">{{h.taskType}}</td>
+    <td class="effortHours">{{h.completedDate}}</td>
+    <td class="weight">{{h.hifzLevel}}</td>
+    <td>
+      <a *ngIf="h.hifzLevel == ''" (click)="completeHifz(h)"  class="btn btn-sm btn-primary">Complete</a>
+    </td>
+
+  </tr>
+  </tbody>
+</table>

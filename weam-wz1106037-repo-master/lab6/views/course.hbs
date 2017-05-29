@@ -1,0 +1,16 @@
+<h1> Programs Dropdown:</h1>
+<br>
+<caption for="programsDD">select a program:</caption>
+<select name = "programsDD"  id="programsDD" onchange="onProgramsChange(this.value)">
+    <option value=""></option>
+    {{#programs}}
+        <option value="{{code}}"> {{code}} - {{name}} </option>
+    {{/programs}}
+</select>
+
+<br><br>
+
+<div id="programDetails"></div>
+
+
+<script src ="/views/js/course.js"></script>

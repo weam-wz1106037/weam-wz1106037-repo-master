@@ -1,0 +1,22 @@
+<form #theForm="ngForm" (ngSubmit)="updateHifz(theForm)">
+  <legend *ngIf="hifz"><b>Task:</b> {{hifz.taskType}} of {{hifz.suraName}} from {{hifz.fromAya}} to {{hifz.toAya}}</legend>
+
+  <div class="form-group">
+    <div class="form-inline">
+      <label class="control-label">Completed Date</label>
+      <input type="date" id="completedDate" name="completedDate" ngModel required  >
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-inline">
+      <label class="control-label">Mastery Level</label>
+      <select #selectedValue class="form-control" name="hifzLevel" id="hifzLevel" ngModel>
+        <option value="Excellent"> Excellent</option>
+        <option value="Ok"> Ok</option>
+        <option value="Poor"> Poor</option>
+      </select>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="!theForm.valid" class="btn btn-success">Submit</button>
+</form>

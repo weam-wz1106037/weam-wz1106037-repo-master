@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Almonds",
+    "image": "almonds.jpg",
+    "price": 5
+  },
+  {
+    "id": 2,
+    "name": "Apple",
+    "image": "apple.jpg",
+    "price": 3.5
+  },
+  {
+    "id": 3,
+    "name": "Banana",
+    "image": "banana.jpg",
+    "price": 3.5
+  },
+  {
+    "id": 4,
+    "name": "Fruit Kebab",
+    "image": "fruit-kebab.jpg",
+    "price": 6.5
+  },
+  {
+    "id": 5,
+    "name": "Mixed nuts",
+    "image": "mixed-nuts.jpg",
+    "price": 10
+  },
+  {
+    "id": 6,
+    "name": "Pumpkin seeds",
+    "image": "pumpkin-seeds.jpg",
+    "price": 9
+  },
+  {
+    "id": 7,
+    "name": "Salad",
+    "image": "salad.jpg",
+    "price": 12
+  }
+]

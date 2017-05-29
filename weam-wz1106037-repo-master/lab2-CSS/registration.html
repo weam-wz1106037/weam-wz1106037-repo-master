@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <style>
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class ="col-xs-12"></div>
+    </div>
+
+
+
+<div >
+
+    <div >
+        <h1>Qatar University
+            <small>Registration Department</small>
+        </h1>
+    </div>
+    <form action="index.html" method="get" id="bs">
+
+        <fieldset>
+            <legend >
+                <h1 class="jumbotron"> Personal information </h1>
+            </legend>
+
+            <div >
+                <label for="name">First Name:</label>
+                <input class="form-control" type="text" id="name" name="name" maxlength="50" required>
+            </div>
+
+            <div >
+                <label for="lname">Last Name:</label>
+                <input class="form-control" type="text" id="lname" name="lname" maxlength="50" required>
+            </div>
+
+            <div >
+                <label for="Date of Birth">Date of Birth: </label>
+                <input class="form-control" type="date" id="Date of Birth" name="date">
+            </div>
+
+            <label for="weight">weight:</label>
+            <input  type="range" id="weight" name="weight" min="0" max="300"
+                    oninput="this.form.selectedWeight = this.value" value="120">
+
+            <lable> Selected Value:</lable>
+            <output name="selectedAmount" for="weight"></output>
+
+
+            <div ><label>Gender:</label>
+                <div >
+                    <label><input value="ON" type="radio" id="on" name="radio"> Male:</label></div>
+                <div >
+                    <label> <input value="OFF" type="radio" id="off" name="radio">Female:</label>
+                </div>
+            </div>
+
+
+            <div >
+                <label>No. of sibling">No. of Sibling:</label>
+                <input  class="form-control" type="number" id="No. of sibling" name="No. of sibling" step="1">
+                <label>(0 to 15) </label>
+            </div>
+
+            <div >
+                <label for="Employment">Employment:</label>
+                <select id="Employment" name="Employment" multiple size="7" >
+                    <optgroup label="Government">
+                        <option value="Adminstrative">Adminstrative</option>
+                        <option value="Technical">Technical"</option>
+                    </optgroup>
+                    <optgroup label="Private Sector">
+                        <option value="Owner">Owner</option>
+                        <option value="Employee">Employee</option>
+                        <option value="Other">Other</option>
+                    </optgroup>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset disabled>
+            <legend >
+                <h1 class="jumbotron">
+                    Contact information
+                </h1>
+            </legend>
+
+            <div >
+                <label for="Email">Email:</label>
+                <input class="form-control"  type="email" id="Email" name="Email">
+            </div>
+
+            <div >
+                <label for="Phone">Phone:</label>
+                <input class="form-control" type="number" id="Phone" name="Phone" >
+            </div>
+
+            <label>Preferred Contact Methods: </label>
+
+
+            <div >
+                <lable><input type="checkbox"> By Phone</lable>
+            </div>
+            <div >
+                <lable><input type="checkbox"> By Email</lable>
+            </div>
+            <div >
+                <lable><input type="checkbox"> By Mailing Address</lable>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend >
+                <h1 class="jumbotron"> Address information</h1>
+            </legend>
+            <lable>Address:</lable>
+            <textarea rows="6" cols="35"> </textarea>
+
+
+            <lable>City:</lable>
+            <input class="form-control" list="cities" name="cities" >
+
+
+            <datalist id="cities">
+                <option value="Doha">
+                <option value="AlWakra">
+                <option value="AlKhore">
+            </datalist>
+
+
+            <lable>Country:</lable>
+            <select name="country" id="country">
+                <option value="Qatar"> Qatar</option>
+                <option value="Kwuait"> Kwuait</option>
+                <option value="Bahrain"> Bahrain</option>
+            </select>
+
+        </fieldset>
+        <hr>
+       <button type="submit" class="btn btn-primary">submit</button>
+        <button type="reset" class="btn btn-danger">reset</button>
+
+
+    </form>
+</div>
+
+</div>
+</body>
+</html>

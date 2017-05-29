@@ -1,0 +1,1 @@
+Repository for Lab activities and assignments. Each Lab should be in its own sub-folder (e.g., Lab1, Lab2, Lab3 etc.)

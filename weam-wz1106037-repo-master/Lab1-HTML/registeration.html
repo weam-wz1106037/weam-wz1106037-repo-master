@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>registration</title>
+
+</head>
+<body>
+<form>
+    <h1>
+        <b> Patient Contacts Information</b>
+
+    </h1>
+    <br>
+    <fieldset>
+        <legend>Personal Information </legend>
+        <label > First Name : </label>
+        <input type="text "  name= "fn" id="fn" maxlength="50">
+        <br>
+        <label> Last Name : </label>
+        <input type="text "  name= "ln" id="ln" maxlength="50">
+        <br>
+        <label > Date Of Birth : </label>
+        <input type="date "  name= "dob" id="dob">
+        <br>
+        <label > Weight :1 </label>
+        <input type="range"  name= "weight" id="weight">
+        <label > 300 selected value :1 </label>
+
+        <br>
+        <label>
+        Gender :
+        </label>
+        <input type="radio"  name= "gender" id="gender1" value="male" checked>  Male
+
+        <input type="radio"  name= "gender" id="gender2" value="female" checked> Female
+        <br>
+
+        <label for="siblings"> No of Sibling: </label>
+        <input type="number"  name= "siblings" id="siblings" min="0" max="15" step="1">
+        (0 to 15)
+        <br>
+        <label>Employment:</label>
+        <select name="list" id="list" multiple>
+            <optgroup label="Government">
+                <option value="Admin"> Administrative </option>
+                <option value="Tech"> Technical </option>
+            </optgroup>
+            <optgroup label="Private Sector ">
+                <option value="owner"> Owner </option>
+                <option value="employee"> Employee </option>
+            </optgroup>
+            <option value="other"> Other </option>
+
+            </optgroup>
+        </select>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend> Contact Information</legend>
+        <label for="email"> Email: </label>
+        <input type="email"  name= "email" id="email">
+
+        <label for="phone"> phone: </label>
+        <input type="number"  name= "Phone" id="Phone">
+        <br>
+        <label> Preferred Contact Methods</label>
+        <br>
+        <input value="phone"  type="checkbox"  name="weam">  By Phone <br>
+        <input value="email"  type="checkbox"  name="weam"> By Email <br>
+            <input value="mail address "  type="checkbox"  name="weam" > By Mailing Address <br>
+
+
+
+
+
+    </fieldset>
+    <fieldset>
+
+        <legend> Address Information</legend>
+        <label > Address: </label>
+        <textarea rows="4" cols="30" ></textarea>
+        <br>
+
+        <label > City: </label>
+        <select name=" clist " id=" clist">
+            <option value ="Doha" > Doha</option>
+            <option value ="alwakrah" > Al Wakrah </option>
+            <option value ="alkhor" > Al Khore</option>
+        </select>
+        <br>
+
+
+        <label>Country : </label>
+        <select name=" list " id=" list2">
+            <option value ="Qatar" > Qatar</option>
+            <option value ="Kuwait" > Kuwait</option>
+            <option value ="Bahrain" > Bahrain</option>
+        </select>
+    </fieldset>
+    <br>
+    <input type="submit">
+    <input type="reset">
+</form>
+</body>
+</html>
+
+
+        </select>
+    </fieldset>
+
+
+
+
+
+
+</form>
+<header>

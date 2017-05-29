@@ -1,0 +1,95 @@
+#footer{
+    background:#0f0f0f;
+    height: 50px;
+    color: white;
+     clear: both;
+    margin-top: 50px;
+    padding-top: 5px;
+}
+
+ header{
+     padding:10px;
+     margin: 0 auto;
+     background-color: dodgerblue;
+     font-size: 2em;
+     font-family:"SansSerif";
+     text-align: center;
+
+ }
+ .nav{
+     padding:5px ;
+     overflow:hidden ;
+     margin:0 auto;
+     background-color: #333;
+ }
+
+.nav ul {
+     background: #333;
+     list-style: none;
+
+ }
+.nav ul li{
+    float: left;
+    padding-right: 25px;
+}
+.center{
+    text-align: center;
+}
+
+a:hover{
+    background: #bfbfbf;
+}
+#facts ol{
+    list-style-type: upper-roman;
+}
+#top-uni{
+    list-style-type: lower-greek;
+}
+
+body{
+   width: 80%;
+    height:100%;
+    position: relative;
+    min-height: 100%;
+    margin: auto;
+}
+
+
+.main{
+    float: left;
+    width: 79%;
+}
+.left-pane{
+    float: right;
+    width: 20%;
+    background-color: #333;
+}
+
+.left-pane h1{
+    background-color:dodgerblue ;
+    color:white;
+    font-size: 19px; ;
+
+}
+
+#colleges{
+    color: white ;
+    list-style:none ;
+    text-align: left;
+    padding-left: 0px;
+    font-size: 15px;
+}
+
+#colleges a{
+    text-decoration: none;
+    color: white;
+
+}
+#colleges a:hover{
+    color: #bfbfbf;
+    background-color: cadetblue;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
